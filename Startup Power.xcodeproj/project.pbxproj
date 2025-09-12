@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2203E42B2E72BE3600A3CC4E /* Startup_PowerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203E42A2E72BE3600A3CC4E /* Startup_PowerApp.swift */; };
+		2203E42D2E72BE3600A3CC4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203E42C2E72BE3600A3CC4E /* ContentView.swift */; };
+		2203E42F2E72BE3800A3CC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2203E42E2E72BE3800A3CC4E /* Assets.xcassets */; };
+		2203E4332E72BE3800A3CC4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2203E4322E72BE3800A3CC4E /* Preview Assets.xcassets */; };
+		2203E43D2E72BE3900A3CC4E /* Startup_PowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203E43C2E72BE3900A3CC4E /* Startup_PowerTests.swift */; };
+		2203E4472E72BE3900A3CC4E /* Startup_PowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203E4462E72BE3900A3CC4E /* Startup_PowerUITests.swift */; };
+		2203E4492E72BE3900A3CC4E /* Startup_PowerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203E4482E72BE3900A3CC4E /* Startup_PowerUITestsLaunchTests.swift */; };
+		2203E4562E72BEDB00A3CC4E /* PowerSettingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203E4552E72BEDB00A3CC4E /* PowerSettingState.swift */; };
+		2203E4582E72BEFA00A3CC4E /* SystemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203E4572E72BEFA00A3CC4E /* SystemInfo.swift */; };
+		2203E45A2E72BF1900A3CC4E /* NVRAMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203E4592E72BF1900A3CC4E /* NVRAMManager.swift */; };
+		2203E45C2E72BF8800A3CC4E /* WindowObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203E45B2E72BF8800A3CC4E /* WindowObserver.swift */; };
+		2203E45E2E72BF9B00A3CC4E /* PowerSettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203E45D2E72BF9B00A3CC4E /* PowerSettingRow.swift */; };
+		E14AB3452E73028D0094FBED /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E14AB3442E73028D0094FBED /* Localizable.xcstrings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2203E4392E72BE3900A3CC4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2203E41F2E72BE3600A3CC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2203E4262E72BE3600A3CC4E;
+			remoteInfo = "Startup Power";
+		};
+		2203E4432E72BE3900A3CC4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2203E41F2E72BE3600A3CC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2203E4262E72BE3600A3CC4E;
+			remoteInfo = "Startup Power";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2203E4272E72BE3600A3CC4E /* Startup Power.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Startup Power.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2203E42A2E72BE3600A3CC4E /* Startup_PowerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startup_PowerApp.swift; sourceTree = "<group>"; };
+		2203E42C2E72BE3600A3CC4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2203E42E2E72BE3800A3CC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2203E4302E72BE3800A3CC4E /* Startup_Power.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Startup_Power.entitlements; sourceTree = "<group>"; };
+		2203E4322E72BE3800A3CC4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2203E4382E72BE3900A3CC4E /* Startup PowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Startup PowerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2203E43C2E72BE3900A3CC4E /* Startup_PowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startup_PowerTests.swift; sourceTree = "<group>"; };
+		2203E4422E72BE3900A3CC4E /* Startup PowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Startup PowerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2203E4462E72BE3900A3CC4E /* Startup_PowerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startup_PowerUITests.swift; sourceTree = "<group>"; };
+		2203E4482E72BE3900A3CC4E /* Startup_PowerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startup_PowerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2203E4552E72BEDB00A3CC4E /* PowerSettingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSettingState.swift; sourceTree = "<group>"; };
+		2203E4572E72BEFA00A3CC4E /* SystemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemInfo.swift; sourceTree = "<group>"; };
+		2203E4592E72BF1900A3CC4E /* NVRAMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVRAMManager.swift; sourceTree = "<group>"; };
+		2203E45B2E72BF8800A3CC4E /* WindowObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowObserver.swift; sourceTree = "<group>"; };
+		2203E45D2E72BF9B00A3CC4E /* PowerSettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSettingRow.swift; sourceTree = "<group>"; };
+		E14AB3442E73028D0094FBED /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2203E4242E72BE3600A3CC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2203E4352E72BE3900A3CC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2203E43F2E72BE3900A3CC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2203E41E2E72BE3600A3CC4E = {
+			isa = PBXGroup;
+			children = (
+				E14AB3442E73028D0094FBED /* Localizable.xcstrings */,
+				2203E4292E72BE3600A3CC4E /* Startup Power */,
+				2203E43B2E72BE3900A3CC4E /* Startup PowerTests */,
+				2203E4452E72BE3900A3CC4E /* Startup PowerUITests */,
+				2203E4282E72BE3600A3CC4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2203E4282E72BE3600A3CC4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2203E4272E72BE3600A3CC4E /* Startup Power.app */,
+				2203E4382E72BE3900A3CC4E /* Startup PowerTests.xctest */,
+				2203E4422E72BE3900A3CC4E /* Startup PowerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2203E4292E72BE3600A3CC4E /* Startup Power */ = {
+			isa = PBXGroup;
+			children = (
+				2203E42A2E72BE3600A3CC4E /* Startup_PowerApp.swift */,
+				2203E4552E72BEDB00A3CC4E /* PowerSettingState.swift */,
+				2203E4572E72BEFA00A3CC4E /* SystemInfo.swift */,
+				2203E4592E72BF1900A3CC4E /* NVRAMManager.swift */,
+				2203E45B2E72BF8800A3CC4E /* WindowObserver.swift */,
+				2203E45D2E72BF9B00A3CC4E /* PowerSettingRow.swift */,
+				2203E42C2E72BE3600A3CC4E /* ContentView.swift */,
+				2203E42E2E72BE3800A3CC4E /* Assets.xcassets */,
+				2203E4302E72BE3800A3CC4E /* Startup_Power.entitlements */,
+				2203E4312E72BE3800A3CC4E /* Preview Content */,
+			);
+			path = "Startup Power";
+			sourceTree = "<group>";
+		};
+		2203E4312E72BE3800A3CC4E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2203E4322E72BE3800A3CC4E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2203E43B2E72BE3900A3CC4E /* Startup PowerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2203E43C2E72BE3900A3CC4E /* Startup_PowerTests.swift */,
+			);
+			path = "Startup PowerTests";
+			sourceTree = "<group>";
+		};
+		2203E4452E72BE3900A3CC4E /* Startup PowerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2203E4462E72BE3900A3CC4E /* Startup_PowerUITests.swift */,
+				2203E4482E72BE3900A3CC4E /* Startup_PowerUITestsLaunchTests.swift */,
+			);
+			path = "Startup PowerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2203E4262E72BE3600A3CC4E /* Startup Power */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2203E44C2E72BE3900A3CC4E /* Build configuration list for PBXNativeTarget "Startup Power" */;
+			buildPhases = (
+				2203E4232E72BE3600A3CC4E /* Sources */,
+				2203E4242E72BE3600A3CC4E /* Frameworks */,
+				2203E4252E72BE3600A3CC4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Startup Power";
+			productName = "Startup Power";
+			productReference = 2203E4272E72BE3600A3CC4E /* Startup Power.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2203E4372E72BE3900A3CC4E /* Startup PowerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2203E44F2E72BE3900A3CC4E /* Build configuration list for PBXNativeTarget "Startup PowerTests" */;
+			buildPhases = (
+				2203E4342E72BE3900A3CC4E /* Sources */,
+				2203E4352E72BE3900A3CC4E /* Frameworks */,
+				2203E4362E72BE3900A3CC4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2203E43A2E72BE3900A3CC4E /* PBXTargetDependency */,
+			);
+			name = "Startup PowerTests";
+			productName = "Startup PowerTests";
+			productReference = 2203E4382E72BE3900A3CC4E /* Startup PowerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2203E4412E72BE3900A3CC4E /* Startup PowerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2203E4522E72BE3900A3CC4E /* Build configuration list for PBXNativeTarget "Startup PowerUITests" */;
+			buildPhases = (
+				2203E43E2E72BE3900A3CC4E /* Sources */,
+				2203E43F2E72BE3900A3CC4E /* Frameworks */,
+				2203E4402E72BE3900A3CC4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2203E4442E72BE3900A3CC4E /* PBXTargetDependency */,
+			);
+			name = "Startup PowerUITests";
+			productName = "Startup PowerUITests";
+			productReference = 2203E4422E72BE3900A3CC4E /* Startup PowerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2203E41F2E72BE3600A3CC4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2203E4262E72BE3600A3CC4E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					2203E4372E72BE3900A3CC4E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2203E4262E72BE3600A3CC4E;
+					};
+					2203E4412E72BE3900A3CC4E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2203E4262E72BE3600A3CC4E;
+					};
+				};
+			};
+			buildConfigurationList = 2203E4222E72BE3600A3CC4E /* Build configuration list for PBXProject "Startup Power" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = 2203E41E2E72BE3600A3CC4E;
+			productRefGroup = 2203E4282E72BE3600A3CC4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2203E4262E72BE3600A3CC4E /* Startup Power */,
+				2203E4372E72BE3900A3CC4E /* Startup PowerTests */,
+				2203E4412E72BE3900A3CC4E /* Startup PowerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2203E4252E72BE3600A3CC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2203E4332E72BE3800A3CC4E /* Preview Assets.xcassets in Resources */,
+				2203E42F2E72BE3800A3CC4E /* Assets.xcassets in Resources */,
+				E14AB3452E73028D0094FBED /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2203E4362E72BE3900A3CC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2203E4402E72BE3900A3CC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2203E4232E72BE3600A3CC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2203E4582E72BEFA00A3CC4E /* SystemInfo.swift in Sources */,
+				2203E45E2E72BF9B00A3CC4E /* PowerSettingRow.swift in Sources */,
+				2203E4562E72BEDB00A3CC4E /* PowerSettingState.swift in Sources */,
+				2203E42D2E72BE3600A3CC4E /* ContentView.swift in Sources */,
+				2203E42B2E72BE3600A3CC4E /* Startup_PowerApp.swift in Sources */,
+				2203E45A2E72BF1900A3CC4E /* NVRAMManager.swift in Sources */,
+				2203E45C2E72BF8800A3CC4E /* WindowObserver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2203E4342E72BE3900A3CC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2203E43D2E72BE3900A3CC4E /* Startup_PowerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2203E43E2E72BE3900A3CC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2203E4492E72BE3900A3CC4E /* Startup_PowerUITestsLaunchTests.swift in Sources */,
+				2203E4472E72BE3900A3CC4E /* Startup_PowerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2203E43A2E72BE3900A3CC4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2203E4262E72BE3600A3CC4E /* Startup Power */;
+			targetProxy = 2203E4392E72BE3900A3CC4E /* PBXContainerItemProxy */;
+		};
+		2203E4442E72BE3900A3CC4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2203E4262E72BE3600A3CC4E /* Startup Power */;
+			targetProxy = 2203E4432E72BE3900A3CC4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2203E44A2E72BE3900A3CC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2203E44B2E72BE3900A3CC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		2203E44D2E72BE3900A3CC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Startup Power/Startup_Power.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Startup Power/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Startup Power";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twm.Startup-Power";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2203E44E2E72BE3900A3CC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Startup Power/Startup_Power.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Startup Power/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Startup Power";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twm.Startup-Power";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2203E4502E72BE3900A3CC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twm.Startup-PowerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Startup Power.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Startup Power";
+			};
+			name = Debug;
+		};
+		2203E4512E72BE3900A3CC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twm.Startup-PowerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Startup Power.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Startup Power";
+			};
+			name = Release;
+		};
+		2203E4532E72BE3900A3CC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twm.Startup-PowerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Startup Power";
+			};
+			name = Debug;
+		};
+		2203E4542E72BE3900A3CC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twm.Startup-PowerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Startup Power";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2203E4222E72BE3600A3CC4E /* Build configuration list for PBXProject "Startup Power" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2203E44A2E72BE3900A3CC4E /* Debug */,
+				2203E44B2E72BE3900A3CC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2203E44C2E72BE3900A3CC4E /* Build configuration list for PBXNativeTarget "Startup Power" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2203E44D2E72BE3900A3CC4E /* Debug */,
+				2203E44E2E72BE3900A3CC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2203E44F2E72BE3900A3CC4E /* Build configuration list for PBXNativeTarget "Startup PowerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2203E4502E72BE3900A3CC4E /* Debug */,
+				2203E4512E72BE3900A3CC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2203E4522E72BE3900A3CC4E /* Build configuration list for PBXNativeTarget "Startup PowerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2203E4532E72BE3900A3CC4E /* Debug */,
+				2203E4542E72BE3900A3CC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2203E41F2E72BE3600A3CC4E /* Project object */;
+}
