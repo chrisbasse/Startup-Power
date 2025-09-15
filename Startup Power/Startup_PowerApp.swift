@@ -35,7 +35,7 @@ struct PowerSettingsApp: App {
         
         Une application pour gérer les paramètres de démarrage automatique de votre Mac.
         
-        Version 1.0
+        Version 1.0 (4)
         © 2025 Christophe BASSETTE
         """
         aboutPanel.alertStyle = .informational

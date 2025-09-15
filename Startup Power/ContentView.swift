@@ -35,7 +35,7 @@ struct ContentView: View {
 
             // Content
             VStack(spacing: 24) {
-                // System Info
+                // System Info with fixed height for notification area
                 VStack(alignment: .leading, spacing: 8) {
                     HStack {
                         Image(systemName: nvramManager.isMacBook ? "laptopcomputer" : "desktopcomputer")
@@ -58,15 +58,30 @@ struct ContentView: View {
                         .font(.system(size: 12))
                         .foregroundColor(.secondary)
 
-                    if nvramManager.hasUnsavedChanges {
-                        HStack {
-                            Image(systemName: "exclamationmark.circle.fill")
-                                .foregroundColor(.orange)
-                            Text("unsaved_changes", bundle: .main)
-                                .font(.system(size: 12, weight: .medium))
-                                .foregroundColor(.orange)
+                    // Zone réservée pour la notification avec hauteur fixe
+                    Group {
+                        if nvramManager.hasUnsavedChanges {
+                            HStack {
+                                Image(systemName: "exclamationmark.circle.fill")
+                                    .foregroundColor(.orange)
+                                Text("unsaved_changes", bundle: .main)
+                                    .font(.system(size: 12, weight: .medium))
+                                    .foregroundColor(.orange)
+                                Spacer()
+                            }
+                            .transition(.opacity.combined(with: .scale(scale: 0.95)))
+                        } else {
+                            // Spacer invisible pour maintenir la hauteur constante
+                            HStack {
+                                Text("")
+                                    .font(.system(size: 12, weight: .medium))
+                                Spacer()
+                            }
+                            .opacity(0)
                         }
                     }
+                    .frame(height: 16) // Hauteur fixe pour éviter le mouvement
+                    .animation(.easeInOut(duration: 0.2), value: nvramManager.hasUnsavedChanges)
                 }
 
                 if !nvramManager.isMacBook {
@@ -160,31 +175,46 @@ struct ContentView: View {
 
                 Spacer()
 
-                // Action Buttons
-                HStack(spacing: 16) {
-                    Button(NSLocalizedString("cancel", bundle: .main, comment: "")) {
-                        NSApplication.shared.terminate(nil)
-                    }
-                    .buttonStyle(.bordered)
-                    .disabled(nvramManager.isLoading)
-                    .keyboardShortcut(.cancelAction)
-
-                    if nvramManager.hasUnsavedChanges {
-                        Button(NSLocalizedString("reset", bundle: .main, comment: "")) {
-                            nvramManager.pendingSetting = nvramManager.currentSetting
+                // Action Buttons avec container à hauteur fixe
+                VStack {
+                    HStack(spacing: 16) {
+                        Button(NSLocalizedString("cancel", bundle: .main, comment: "")) {
+                            NSApplication.shared.terminate(nil)
                         }
                         .buttonStyle(.bordered)
                         .disabled(nvramManager.isLoading)
-                    }
+                        .keyboardShortcut(.cancelAction)
 
-                    Spacer()
+                        // Bouton Reset avec largeur réservée
+                        Group {
+                            if nvramManager.hasUnsavedChanges {
+                                Button(NSLocalizedString("reset", bundle: .main, comment: "")) {
+                                    nvramManager.pendingSetting = nvramManager.currentSetting
+                                }
+                                .buttonStyle(.bordered)
+                                .disabled(nvramManager.isLoading)
+                                .transition(.opacity.combined(with: .scale(scale: 0.95)))
+                            } else {
+                                // Bouton invisible pour maintenir l'espacement
+                                Button("") { }
+                                    .buttonStyle(.bordered)
+                                    .opacity(0)
+                                    .disabled(true)
+                            }
+                        }
+                        .frame(minWidth: 60) // Largeur minimale réservée
+                        .animation(.easeInOut(duration: 0.2), value: nvramManager.hasUnsavedChanges)
 
-                    Button(NSLocalizedString("apply_settings", bundle: .main, comment: "")) {
-                        applySettingWithConfirmation(nvramManager.pendingSetting)
+                        Spacer()
+
+                        Button(NSLocalizedString("apply_settings", bundle: .main, comment: "")) {
+                            applySettingWithConfirmation(nvramManager.pendingSetting)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .disabled(nvramManager.isLoading || !nvramManager.isSupported || !nvramManager.hasUnsavedChanges)
                     }
-                    .buttonStyle(.borderedProminent)
-                    .disabled(nvramManager.isLoading || !nvramManager.isSupported || !nvramManager.hasUnsavedChanges)
                 }
+                .frame(height: 32) // Hauteur fixe pour les boutons
             }
             .padding(24)
         }
