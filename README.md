@@ -31,7 +31,20 @@ Inspired by **Guillaume Gete**’s script:
 - A **MacBook** (iMac and Mac mini are not supported).  
 - **Administrator rights required** (macOS will prompt for your password).  
 - ⚠️ **Note: this application is not signed by Apple.**  
-  You will need to launch it via **Right click → Open** and confirm manually in **Security Preferences**.  
+
+From Finder :
+
+You will need to launch it via **Right click → Open** and confirm manually in **Security Preferences**.  
+
+From Terminal :
+```
+codesign --force --deep --sign - /path/to/yourApp.app
+xattr -d com.apple.quarantine /path/to/yourApp.app
+```
+
+From Sentinel (drag and drop) :
+
+Simply drag your app into the Sentinel window
 
 ---
 
